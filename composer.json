@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SetBased\\Abc\\Obfuscator": "src/"
+      "SetBased\\Abc\\Obfuscator\\": "src/"
     }
   },
   "config": {
