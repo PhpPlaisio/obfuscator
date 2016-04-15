@@ -1,0 +1,27 @@
+{
+  "name": "setbased/abc-obfuscator-interface",
+  "description": "ABC-Framework: Obfuscator Interface",
+  "keywords": [
+    "ABC",
+    "Framework",
+    "Obfuscate",
+    "Obfuscator"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require-dev": {
+    "phing/phing": "*",
+    "phpunit/phpunit": ">=4.0.0"
+  },
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SetBased\\Abc\\Obfuscator": "src/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
