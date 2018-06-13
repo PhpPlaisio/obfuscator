@@ -40,7 +40,7 @@ interface ObfuscatorFactory
    *
    * @return Obfuscator
    */
-  public static function getObfuscator(string $alias);
+  public static function getObfuscator(string $alias): Obfuscator;
 
   //--------------------------------------------------------------------------------------------------------------------
 }
