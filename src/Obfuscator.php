@@ -1,5 +1,5 @@
 <?php
-//----------------------------------------------------------------------------------------------------------------------
+
 namespace SetBased\Abc\Obfuscator;
 
 /**
@@ -15,7 +15,7 @@ interface Obfuscator
    *
    * @return int|null The database ID.
    */
-  public function decode($code);
+  public function decode(?string $code): ?int;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -25,7 +25,7 @@ interface Obfuscator
    *
    * @return string|null The obfuscated database ID.
    */
-  public function encode($id);
+  public function encode(?int $id): ?string;
 
   //--------------------------------------------------------------------------------------------------------------------
 }

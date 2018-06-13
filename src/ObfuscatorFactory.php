@@ -1,5 +1,5 @@
 <?php
-//----------------------------------------------------------------------------------------------------------------------
+
 namespace SetBased\Abc\Obfuscator;
 
 /**
@@ -14,12 +14,12 @@ interface ObfuscatorFactory
   /**
    * De-obfuscates an obfuscated database ID.
    *
-   * @param string $code  The obfuscated database ID.
-   * @param string $alias The alias for table from which the ID originates.
+   * @param string|null $code  The obfuscated database ID.
+   * @param string      $alias The alias for table from which the ID originates.
    *
    * @return int The (de-obfuscated) database ID.
    */
-  public static function decode($code, $alias);
+  public static function decode(?string $code, string $alias): ?int;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -30,7 +30,7 @@ interface ObfuscatorFactory
    *
    * @return string The obfuscated database ID.
    */
-  public static function encode($id, $alias);
+  public static function encode(?int $id, string $alias): ?string;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -40,7 +40,7 @@ interface ObfuscatorFactory
    *
    * @return Obfuscator
    */
-  public static function getObfuscator($alias);
+  public static function getObfuscator(string $alias);
 
   //--------------------------------------------------------------------------------------------------------------------
 }
