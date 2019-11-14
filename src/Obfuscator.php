@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Abc\Obfuscator;
+namespace Plaisio\Obfuscator;
 
 /**
  * Interface for defining classes for obfuscating and un-obfuscating database IDs.

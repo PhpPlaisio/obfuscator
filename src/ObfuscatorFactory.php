@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Abc\Obfuscator;
+namespace Plaisio\Obfuscator;
 
 /**
  * An interface for defining factories for Obfuscator objects.

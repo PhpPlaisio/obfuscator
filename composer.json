@@ -1,8 +1,8 @@
 {
-  "name": "setbased/abc-obfuscator",
-  "description": "ABC-Framework: Obfuscator",
+  "name": "plaisio/obfuscator",
+  "description": "PhpPlaisio: Obfuscator",
   "keywords": [
-    "ABC-Framework",
+    "PhpPlaisio",
     "Obfuscate",
     "Obfuscator"
   ],
@@ -12,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SetBased\\Abc\\Obfuscator\\": "src/"
+      "Plaisio\\Obfuscator\\": "src/"
     }
   }
 }
