@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Plaisio\Obfuscator;
 
 /**
- * Interface for defining classes for obfuscating and un-obfuscating database IDs.
+ * Interface for defining classes for obfuscating and de-obfuscating database IDs.
  */
 interface Obfuscator
 {
