@@ -1,0 +1,9 @@
+<kernel>
+    <properties>
+        <property>
+            <type>\Plaisio\Obfuscator\ObfuscatorFactory</type>
+            <name>obfuscator</name>
+            <description>The factory for creating Obfuscators.</description>
+        </property>
+    </properties>
+</kernel>
