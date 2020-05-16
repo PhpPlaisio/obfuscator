@@ -13,6 +13,16 @@ interface ObfuscatorFactory
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
+   * Returns an Obfuscator for obfuscating and de-obfuscating database IDs.
+   *
+   * @param string $alias The alias for table for which the Obfuscator must obfuscate and de-obfuscate IDs.
+   *
+   * @return Obfuscator
+   */
+  public static function create(string $alias): Obfuscator;
+
+  //--------------------------------------------------------------------------------------------------------------------
+  /**
    * De-obfuscates an obfuscated database ID.
    *
    * @param string|null $code  The obfuscated database ID.
@@ -32,16 +42,6 @@ interface ObfuscatorFactory
    * @return string The obfuscated database ID.
    */
   public static function encode(?int $id, string $alias): ?string;
-
-  //--------------------------------------------------------------------------------------------------------------------
-  /**
-   * Returns an Obfuscator for obfuscating and de-obfuscating database IDs.
-   *
-   * @param string $alias The alias for table for which the Obfuscator must obfuscate and de-obfuscate IDs.
-   *
-   * @return Obfuscator
-   */
-  public static function getObfuscator(string $alias): Obfuscator;
 
   //--------------------------------------------------------------------------------------------------------------------
 }
