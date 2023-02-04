@@ -1,5 +1,3 @@
-.idea
-bin/phing
-bin/phpunit
-composer.lock
-vendor
+/.idea/
+/composer.lock
+/vendor/
