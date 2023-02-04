@@ -28,7 +28,7 @@ interface ObfuscatorFactory
    * @param string|null $code  The obfuscated database ID.
    * @param string      $alias The alias for table from which the ID originates.
    *
-   * @return int The (de-obfuscated) database ID.
+   * @return int|null The (de-obfuscated) database ID.
    */
   public static function decode(?string $code, string $alias): ?int;
 
@@ -39,7 +39,7 @@ interface ObfuscatorFactory
    * @param int|null $id    The database ID.
    * @param string   $alias The alias for table from which the ID originates.
    *
-   * @return string The obfuscated database ID.
+   * @return string|null The obfuscated database ID.
    */
   public static function encode(?int $id, string $alias): ?string;
 
